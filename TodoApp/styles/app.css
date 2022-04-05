@@ -1,0 +1,93 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: rgb(0, 0, 0);
+  /* background: red; */
+  text-align: center;
+}
+
+main {
+    display: flex;
+    
+}
+
+#sect-list {
+  flex: 1;
+  background-color: rgb(72, 180, 129);
+  min-height: 200px;
+  height: calc(100vh - 38px - 44px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#form {
+  flex: 1;
+  background-color: rgb(72, 180, 129);
+  border-radius: 10px;
+  margin-left: 1rem;
+  padding: 2rem;
+}
+
+.control {
+  margin-bottom: 1rem;
+}
+
+.control label {
+  display: inline-block;
+  width: 90px;
+  text-align: right;
+}
+
+.control input {
+  padding: 3px 7px;
+}
+
+.icon-important {
+  color: rgb(3, 123, 192);
+  font-size: 28px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.icon-important:hover {
+  transform: rotate(-15deg);
+}
+
+.far {
+  color: rgb(3, 123, 192);
+}
+
+.fas {
+  color: rgb(0, 86, 136);
+}
+
+#btnVisibility {
+  background: rgb(131, 202, 77);
+  color: white;
+  padding: 1rem;
+  border-radius: 10px;
+  border: none;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+  animation: grow infinite 0.8s linear alternate;
+}
+
+.error {
+    border: 1px solid red;
+    padding: 10px;
+    background-color: aliceblue;
+    color: red;
+    border-radius: 6px;
+}
+.error h6{
+    margin: 0;
+}
+
+.hide {
+    display: none;
+}

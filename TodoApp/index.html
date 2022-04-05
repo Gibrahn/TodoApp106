@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/app.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
+  </head>
+
+  <body>
+    <h1>Task Manager</h1>
+
+    <main>
+      <section id="sect-list">
+        <button id="btnVisibility" onclick="toggleVisibility()">Hide Form</button>
+
+        <div id="task-container">
+            <!-- render task here-->
+        </div>
+      </section>
+
+      <!-- ---------- -->
+      <section id="form">
+        <div class="control">
+          <label for="">Important?</label>
+          <i id="iImportant" class="fas fa-exclamation"></i>
+        </div>
+
+        <div class="control">
+          <label for="">Title:</label>
+          <input id="txtTitle" type="text">
+        </div>
+
+        <div class="control">
+          <label for="">Description:</label>
+          <textarea id="txtDescription" rows="3"></textarea>
+        </div>
+
+        <div class="control">
+          <label for="">DueDate:</label>
+          <input id="selDueDate" type="datetime-local">
+        </div>
+
+        <div class="control">
+          <label for="">Start Date:</label>
+          <input id="selStartDate" type="datetime-local">
+        </div>
+
+        <div class="control">
+          <label for="">Color:</label>
+          <input id="selColor" type="color">
+        </div>
+
+        <div class="control">
+          <label for="">Category:</label>
+          <select name="category" id="txtCategory">
+            <!-- <option value="" disabled selected hidden>Category</option> -->
+            <option value="1">Home</option>
+            <option value="2">Work</option>
+            <option value="3">Personal</option>
+            <option value="4">Family</option>
+          </select>
+        </div>
+
+        <div class="control">
+          <button id="btnSave">Register Task</button>
+        </div>
+        <div id="alertError" class="error hide">
+            <h6>Error: Title should be at least 5 characters long</h6>
+        </div>
+      </section>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./scripts/task.js"></script>
+    <script src="./scripts/main.js"></script>
+    
+  </body>
+</html>
+
